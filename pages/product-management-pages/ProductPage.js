@@ -16,8 +16,8 @@ export class ProductPage {
         this.itemType = page.locator("//div//span[text()='SHIRT']");
         this.itemSize = page.locator("(//button[contains(@class,'w-full border')])[1]");
         this.size = page.locator("//div//span[text()='10']");
-        this.gender = page.locator("(//div[contains(@class,'flex items-center justify-between min')])[5]");
-        this.male = page.locator("//div//span[text()='Male']");
+        this.gender = page.locator("//span[text()='Select Gender']/parent::div");
+        this.male = page.locator("//li//span[text()='Male']");
         this.stockCategory = page.locator("(//div[contains(@class,'flex items-center justify-between min')])[6]");
         this.scategory = page.locator("//div//span[text()='Core Uniform']");
         this.grade = page.locator("(//button[contains(@class,'w-full border')])[2]");
@@ -44,9 +44,11 @@ export class ProductPage {
         await this.itemType.click();
         await this.itemSize.click();
         await this.size.click();
-        await this.gender.scrollIntoViewIfNeeded();
-        await this.gender.click();  
-        await this.male.click();                      
+        await this.gender.click();
+        await this.page.locator('main').evaluate(el => {
+            el.scrollBy(0, 500);
+        });
+        await this.male.click();
         await this.stockCategory.click();
         await this.scategory.click();
         await this.grade.click();
@@ -56,7 +58,7 @@ export class ProductPage {
         await this.institute.click();
         await this.selectDXB.click();
         await this.saveBtn.click();
-        
+
 
 
     }
