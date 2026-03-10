@@ -4,36 +4,33 @@ import {AdminLoginPage} from '../../pages/login-pages/AdminLoginPage.js';
 import  {SidePages} from '../../pages/common-pages/SidePages.js';
 const datas= JSON.parse(JSON.stringify(require('../../config/testData.json')));
 
-// test.beforeAll(async ({ page }) => {
-//   const adminLoginPage = new AdminLoginPage(page);
-//   await adminLoginPage.landing();
-//   await adminLoginPage.adminlogin(datas.username, datas.password);
-// });
+test.describe.serial('Product flow', () => {
+
+  test.beforeEach(async ({ page }) => {
+    const adminLoginPage = new AdminLoginPage(page);
+    await adminLoginPage.landing();
+    await adminLoginPage.adminlogin(datas.username, datas.password);
+  });
 
 test('Adding the uniform product', async ({ page }) => {
 
     const pp = new ProductPage(page);
-    const adminLoginPage = new AdminLoginPage(page);
-    await adminLoginPage.landing();
-    await adminLoginPage.adminlogin(datas.username, datas.password);
     const sp= new SidePages(page);
     await sp.openProductPage();
-    await pp.addUniformProduct("Uniform", "25");
+    await pp.addUniformProduct(datas.productName, datas.age);
     await expect (pp.productMessage).toHaveText('Product added successfully.');
 
       
 })
 
 test('Editing the product',async({page})=>{
-
-    const adminLoginPage = new AdminLoginPage(page);
-  await adminLoginPage.landing();
-  await adminLoginPage.adminlogin(datas.username, datas.password);
     
     const sp= new SidePages(page);
     await sp.openProductPage();
     const pp = new ProductPage(page);
-   await pp.editProduct(datas.editedname);
+   await pp.editProduct(datas.productName,datas.editedname);
 
 
 })
+
+});

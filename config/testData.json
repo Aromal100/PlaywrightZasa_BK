@@ -2,5 +2,8 @@
     "url": "https://store-qa.globtech.in/",
     "username": "ajay@store.com",
     "password": "123456",
+    "productName":"Red scarf",
+    "age":"25",
     "editedname":"editedname"
+    
 }

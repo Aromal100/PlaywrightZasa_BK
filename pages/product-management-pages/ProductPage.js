@@ -28,8 +28,9 @@ export class ProductPage {
         this.selectDXB = page.locator("//span[text()='New Indian Model School, Dubai']/parent::div");
         this.saveBtn = page.locator("//button[text()='Save']");
         this.productMessage=page.locator("//div[text()='Product added successfully.']").first();
-        this.actionBtn=page.locator("button[aria-haspopup='menu']").nth(1);
-        this.editBtn=page.locator("//div[@role='menuitem']").nth(1);
+        this.actionBtn=page.locator("button[aria-haspopup='menu']").nth(2);
+        this.editBtn=page.locator("//button[@id='radix-:r25:']");
+        this.searchfield=page.getByPlaceholder("Search by Product Name or Category");
 
 
     }
@@ -65,10 +66,12 @@ export class ProductPage {
 
     }
 
-    async editProduct(editedName)
+    async editProduct(productName,editedName)
     {
+       await  this.searchfield.fill(productName)
        await this.actionBtn.click(); 
        await this.editBtn.click();
+       await this.productName.clear();
        await this.productName.fill(editedName);
        await this.saveBtn.click();
 
