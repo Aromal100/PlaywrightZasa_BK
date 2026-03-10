@@ -1,4 +1,7 @@
-export class AdminLoginPage {
+
+const datas= JSON.parse(JSON.stringify(require('../../config/testData.json')));
+
+ export class AdminLoginPage {
     constructor(page) {
         this.page = page;   
         this.email = page.locator("#email");
@@ -8,7 +11,7 @@ export class AdminLoginPage {
     }
 
     async landing() {
-        await this.page.goto("https://store-qa.globtech.in/");
+        await this.page.goto(datas.url);
     }
 
     async adminlogin(username, password) {

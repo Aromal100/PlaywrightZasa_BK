@@ -5,28 +5,32 @@ export class ProductPage {
 
     constructor(page) {
         this.page = page;
-        this.addProduct = page.locator("//button[text()='Add Product']");
+        this.addProduct = page.getByRole('button',{name:'Add Product'});
         this.productName = page.locator("#productname");
-        this.category = page.locator("(//div[contains(@class,'flex items-center justify-between min')])[1]");
-        this.uniformCategory = page.locator("(//li[contains(@class,'flex')])[2]");
-        this.description = page.locator("(//div[@data-gramm='false'])[1]");
-        this.brand = page.locator("(//div[contains(@class,'flex items-center justify-between min')])[2]");
+        this.category = page.locator("//span[text()='Select Category']/parent::div");
+        this.uniformCategory = page.locator("//span[text()='Uniform']/parent::li");
+        this.description = page.locator("//div[@data-gramm='false']").first();
+        this.brand = page.locator("//span[text()='Select Brand ']/parent::div");
         this.brandOption = page.locator("//div//span[text()='NIMS']");
-        this.item = page.locator("(//div[contains(@class,'flex items-center justify-between min')])[3]");
+        this.item = page.locator("//span[text()='Select Item Type']/parent::div");
         this.itemType = page.locator("//div//span[text()='SHIRT']");
-        this.itemSize = page.locator("(//button[contains(@class,'w-full border')])[1]");
+        this.itemSize = page.getByRole('button',{name:'Select Item Size'});
         this.size = page.locator("//div//span[text()='10']");
         this.gender = page.locator("//span[text()='Select Gender']/parent::div");
         this.male = page.locator("//li//span[text()='Male']");
-        this.stockCategory = page.locator("(//div[contains(@class,'flex items-center justify-between min')])[6]");
+        this.stockCategory = page.locator("//span[text()='Select Stock Category']/parent::div");
         this.scategory = page.locator("//div//span[text()='Core Uniform']");
-        this.grade = page.locator("(//button[contains(@class,'w-full border')])[2]");
-        this.selectPrimary = page.locator("(//div[contains(@class,'cursor-pointer p')])[2]");
+        this.grade = page.getByRole('button',{name:'Select Grade'});
+        this.selectPrimary = page.locator("//span[text()='Primary']/parent::div");
         this.purchasePrice = page.locator("#price");
         this.sellingPrice = page.locator("#sellingprice");
-        this.institute = page.locator("(//button[contains(@class,'w-full border')])[3]");
-        this.selectDXB = page.locator("(//div[contains(@class,'cursor-pointer p')])[4]");
+        this.institute = page.getByRole('button',{name:'Select Institution'});
+        this.selectDXB = page.locator("//span[text()='New Indian Model School, Dubai']/parent::div");
         this.saveBtn = page.locator("//button[text()='Save']");
+        this.productMessage=page.locator("//div[text()='Product added successfully.']").first();
+        this.actionBtn=page.locator("button[aria-haspopup='menu']").nth(1);
+        this.editBtn=page.locator("//div[@role='menuitem']").nth(1);
+
 
     }
 
@@ -59,12 +63,22 @@ export class ProductPage {
         await this.selectDXB.click();
         await this.saveBtn.click();
 
+    }
 
+    async editProduct(editedName)
+    {
+       await this.actionBtn.click(); 
+       await this.editBtn.click();
+       await this.productName.fill(editedName);
+       await this.saveBtn.click();
 
     }
 
 
 
 
+
+
 }
+
 

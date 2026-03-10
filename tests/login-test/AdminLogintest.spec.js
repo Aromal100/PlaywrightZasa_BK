@@ -1,12 +1,12 @@
-const {test}=require('@playwright/test');
-//import {AdminLoginPage} from '../LoginPages/AdminLoginPage.js';
-const { AdminLoginPage } = require('../../pages/login-pages/AdminLoginPage.js');
+import {test} from '@playwright/test';
+import {AdminLoginPage} from '../../pages/login-pages/AdminLoginPage.js';
+const datas= JSON.parse(JSON.stringify(require('../../config/testData.json')));
 
 test('Admin Login function test',async ({page})=>{
 
     const adminLoginPage = new AdminLoginPage(page);
     await adminLoginPage.landing();
-    await adminLoginPage.adminlogin("shakki09@gmail.com","123456");
+    await adminLoginPage.adminlogin(datas.username,datas.password);
     
 
 });

@@ -1,11 +1,11 @@
-export class SidePages
+export  class SidePages
 {
 
 constructor(page)
 {
 
     this.page=page;
-    this.productManagement=page.locator("//span[text()='Product Management']");
+    this.productManagement=page.locator("//span[text()='Product Management']/parent::button");
     this.product=page.locator("//button[text()='Product']");
 
 }
