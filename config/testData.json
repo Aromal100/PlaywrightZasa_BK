@@ -2,8 +2,11 @@
     "url": "https://store-qa.globtech.in/",
     "username": "ajay@store.com",
     "password": "123456",
-    "productName":"Red scarf",
+    "productname":"Red scarf",
     "age":"25",
-    "editedname":"editedname"
+    "editedname":"Expecto Patronum",
+    "kitname":"My kit",
+    "description":"Testing",
+    "value":"3"
     
 }
