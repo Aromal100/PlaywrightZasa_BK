@@ -3,7 +3,7 @@ export class ProductKit {
     constructor(page) {
         this.page = page;
         this.addkit = page.getByRole('button', { name: 'Add Kit' });
-        this.kitname = page.getByPlaceholder("Enter Kit Name");
+        this.kitName = page.locator("#kitname");
         this.category = page.locator("//span[text()='Select an option...']/parent::div");
         this.bookOption = page.locator("//span[text()='Book']/parent::li");
         this.description = page.locator("[class='ql-editor ql-blank']").nth(0);
@@ -13,8 +13,6 @@ export class ProductKit {
         this.kg1 = page.getByText("KG 1");
         this.kg2 = page.getByText("KG 2");
         this.items = page.getByPlaceholder("Search Item Code / Item Name / Barcode");
-        this.book1 = page.getByText("Test H");
-        this.book2 = page.getByText("IDk 600");
         this.q1 = page.locator("[inputmode='numeric']").nth(0);
         this.q2 = page.locator("[inputmode='numeric']").nth(1);
         this.kitStatus = page.getByText("Select Kit Status Type");
@@ -25,14 +23,15 @@ export class ProductKit {
         this.actionBtn=page.locator("button[data-slot='dropdown-menu-trigger']").nth(1);
         this.delete= page.locator("div[data-slot='dropdown-menu-item']").nth(3);
         this.ok=page.locator("//button[text()='OK']");
-        this.kitAddedMessage=page.locator("//div[text()='Product kit added successfully.']")
-        this.kitDeletedMessage=page.locator("//div[text()='Product kit deleted successfully.']")
+        this.kitAddedMessage=page.locator("//div[text()='Product kit added successfully.']").first();
+        this.kitDeletedMessage=page.locator("//div[text()='Product kit deleted successfully.']").first();
 
     }
 
     async addKitProduct(kitname, decrp, value) {
         await this.addkit.click();
-        await this.kitname.fill(kitname);
+        await this.kitName.waitFor();
+        await this.kitName.type(kitname);
         await this.category.click();
         await this.bookOption.click();
         await this.description.fill(decrp);
@@ -42,8 +41,11 @@ export class ProductKit {
         await this.kg1.click();
         await this.kg2.click();
         await this.items.click();
-        await this.book1.click();
-        await this.book2.click();
+        for(let i=0;i<3;i++)
+        {
+            const add= this.page.locator("//button[.//span[text()='Add']]");
+            await add.nth(i).click();
+        }
         await this.q1.fill(value);
         await this.q2.fill(value);
         await this.kitStatus.click();

@@ -1,5 +1,4 @@
-
-const datas= JSON.parse(JSON.stringify(require('../../config/testData.json')));
+import datas from '../../config/testData.json';
 
  export class AdminLoginPage {
     constructor(page) {
@@ -12,6 +11,8 @@ const datas= JSON.parse(JSON.stringify(require('../../config/testData.json')));
 
     async landing() {
         await this.page.goto(datas.url);
+        
+        
     }
 
     async adminlogin(username, password) {
@@ -19,6 +20,7 @@ const datas= JSON.parse(JSON.stringify(require('../../config/testData.json')));
         await this.pass.fill(password);
         await this.remember.click();
          await this.signIn.click();
+        
 
     }
 

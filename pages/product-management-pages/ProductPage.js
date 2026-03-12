@@ -30,10 +30,10 @@ export class ProductPage {
         this.productMessage = page.locator("//div[text()='Product added successfully.']").first();
         this.editProductMessage = page.locator("//div[text()='Product updated successfully.']").first();
         this.deleteProductMessage=page.locator("//div[text()='Product deleted successfully.']").first();
-        this.actionBtn = page.locator("button[data-slot='dropdown-menu-trigger']").nth(1);
+        this.actionBtn = page.locator("//button[@class='focus:outline-none']").nth(0);
         this.editBtn = page.locator("div[data-slot='dropdown-menu-item']").nth(1);
         this.searchfield = page.getByPlaceholder("Search by Product Name or Category");
-        this.delete= page.locator("div[data-slot='dropdown-menu-item']").nth(2);
+        this.delete= page.locator("//div[@role='menuitem']").nth(2);
         this.ok=page.locator("//button[text()='OK']");
 
 
@@ -72,7 +72,7 @@ export class ProductPage {
 
      async searchProduct(productname)
     {
-        await this.searchfield.type(productname, { delay: 100 });
+        await this.searchfield.type(productname);
     }
 
 

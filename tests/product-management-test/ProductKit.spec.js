@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { test,expect } from '@playwright/test';
 import { AdminLoginPage } from '../../pages/login-pages/AdminLoginPage.js';
 import { ProductKit } from '../../pages/product-management-pages/ProductKit.js';
 import { SidePages } from '../../pages/common-pages/SidePages.js'
@@ -16,7 +16,7 @@ test.describe.serial('Product flow', () => {
         const sp = new SidePages(page);
         await sp.openProductKitPage();
         const productKit = new ProductKit(page);
-        await productKit.addKitProduct(datas.kitname, datas.description,datas.value);
+        await productKit.addKitProduct(datas.kitname,datas.description,datas.value);
         await expect(productKit.kitAddedMessage).toHaveText("Product kit added successfully.");
        
 
