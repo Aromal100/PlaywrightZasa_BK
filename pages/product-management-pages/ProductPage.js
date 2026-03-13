@@ -41,12 +41,12 @@ export class ProductPage {
 
 
 
-    async addUniformProduct(productName, price) {
+    async addUniformProduct(productname, price) {
         await this.addProduct.click();
-        await this.productName.fill(productName);
+        await this.productName.fill(productname);
         await this.category.click();
         await this.uniformCategory.click();
-        await this.description.fill(productName);
+        await this.description.fill(productname);
         await this.brand.click();
         await this.brandOption.click();
         await this.item.click();
@@ -72,7 +72,7 @@ export class ProductPage {
 
      async searchProduct(productname)
     {
-        await this.searchfield.type(productname);
+        await this.searchfield.pressSequentially(productname);
     }
 
 

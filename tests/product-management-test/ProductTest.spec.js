@@ -28,10 +28,9 @@ test.describe.serial('Product flow', () => {
     const sp = new SidePages(page);
     await sp.openProductPage();
     const pp = new ProductPage(page);
-    const productName="Auto"+Date.now();
-    await pp.addUniformProduct(productName, datas.age);
-    await pp.searchProduct(productName);
-    await pp.editProduct(datas.editedname);
+    await pp.addUniformProduct(datas.productname2, datas.age);
+    await pp.searchProduct(datas.productname2);
+    await pp.editProduct(datas.edit);
     await expect(pp.editProductMessage).toHaveText('Product updated successfully.');
 
   })
@@ -41,9 +40,8 @@ test.describe.serial('Product flow', () => {
     const sp = new SidePages(page);
     await sp.openProductPage();
     const pp = new ProductPage(page);
-    const productName="Auto"+Date.now();
-    await pp.addUniformProduct(productName, datas.age);
-    await pp.searchProduct(productName);
+    await pp.addUniformProduct(datas.productname3, datas.age);
+    await pp.searchProduct(datas.edit);
     await pp.productDelete();
     await expect(pp.deleteProductMessage).toHaveText('Product deleted successfully.');
 

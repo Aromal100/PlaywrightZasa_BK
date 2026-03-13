@@ -2,9 +2,11 @@
     "url": "https://store-qa.globtech.in/",
     "username": "ajay@store.com",
     "password": "123456",
-    "productname":"Red scarf",
+    "productname":"boat speaker c1",
     "age":"25",
-    "editedname":"new",
+    "productname2":"boat speaker c2",
+    "productname3":"boat speaker c3",
+    "edit":"bass",
     "kitname":"My kit",
     "description":"Testing",
     "value":"3"
