@@ -1,0 +1,17 @@
+[    1234ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://accounts.google.com/gsi/client:80
+[    1239ms] [ERROR] Not signed in with the identity provider. @ https://store-qa.globtech.in/login:0
+[    6084ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://accounts.google.com/gsi/client:81
+[    6085ms] [WARNING] One Tap skipped - likely due to origin not being configured in Google Cloud Console @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:755
+[    6085ms] [WARNING] Current origin: https://store-qa.globtech.in @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:755
+[    6085ms] [WARNING] Please add this origin to Google Cloud Console > APIs & Services > Credentials > Authorized JavaScript origins @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:755
+[  191216ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:581
+[  246761ms] [ERROR] Failed to load resource: the server responded with a status of 409 (Conflict) @ https://storeapi-qa.globtech.in/api/item/add_color:0
+[  246763ms] [ERROR] API Request Error: Xa @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:591
+[  246764ms] [ERROR] Xa @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:820
+[  858187ms] [WARNING] Dialog is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:537
+[  866222ms] [WARNING] Dialog is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:537
+[  866255ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:581
+[  872142ms] [ERROR] Failed to load resource: the server responded with a status of 409 (Conflict) @ https://storeapi-qa.globtech.in/api/item/add_color:0
+[  872143ms] [ERROR] API Request Error: Xa @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:591
+[  872143ms] [ERROR] Xa @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:820
+[  873133ms] [WARNING] Dialog is changing from controlled to uncontrolled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component. @ https://store-qa.globtech.in/assets/index-Cr-Ww2_w.js:537

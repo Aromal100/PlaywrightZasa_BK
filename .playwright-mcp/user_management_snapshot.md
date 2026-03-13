@@ -1,0 +1,482 @@
+- generic [ref=e2]:
+  - region "Notifications alt+T"
+  - generic [ref=e141]:
+    - generic [ref=e147]:
+      - link "Saza Logo" [ref=e149] [cursor=pointer]:
+        - /url: /
+        - img "Saza Logo" [ref=e150]
+      - navigation [ref=e152]:
+        - generic [ref=e153]:
+          - button "Dashboards" [ref=e154] [cursor=pointer]:
+            - img [ref=e155]
+            - generic [ref=e157]: Dashboards
+            - img [ref=e158]
+          - generic:
+            - button "Management Dashboard" [ref=e160] [cursor=pointer]: Management Dashboard
+            - button "Manager Dashboard" [ref=e162] [cursor=pointer]: Manager Dashboard
+            - button "Main Store Dashboard" [ref=e164] [cursor=pointer]: Main Store Dashboard
+            - button "School Store Dashboard" [ref=e166] [cursor=pointer]: School Store Dashboard
+            - button "Customer Support Dashboard" [ref=e168] [cursor=pointer]: Customer Support Dashboard
+        - generic [ref=e170]:
+          - button "Product Management" [ref=e171] [cursor=pointer]:
+            - img [ref=e172]
+            - generic [ref=e174]: Product Management
+            - img [ref=e175]
+          - generic:
+            - button "Product" [ref=e177] [cursor=pointer]: Product
+            - button "Product Kit" [ref=e179] [cursor=pointer]: Product Kit
+            - button "Product Settings" [ref=e181] [cursor=pointer]: Product Settings
+            - button "Weight Management" [ref=e183] [cursor=pointer]: Weight Management
+            - button "Product Barcode Management" [ref=e185] [cursor=pointer]: Product Barcode Management
+            - button "Product Barcode Printing" [ref=e187] [cursor=pointer]: Product Barcode Printing
+            - button "Rate Management" [ref=e189] [cursor=pointer]: Rate Management
+        - generic [ref=e191]:
+          - button "Quotation & Purchase" [ref=e192] [cursor=pointer]:
+            - img [ref=e193]
+            - generic [ref=e195]: Quotation & Purchase
+            - img [ref=e196]
+          - generic:
+            - button "Quotation Management" [ref=e198] [cursor=pointer]: Quotation Management
+            - button "Purchase Management" [ref=e200] [cursor=pointer]: Purchase Management
+            - button "Purchase Return" [ref=e202] [cursor=pointer]: Purchase Return
+        - generic [ref=e204]:
+          - button "Stock Management" [ref=e205] [cursor=pointer]:
+            - img [ref=e206]
+            - generic [ref=e211]: Stock Management
+            - img [ref=e212]
+          - generic:
+            - button "Stocks" [ref=e214] [cursor=pointer]: Stocks
+            - button "Mark Dead Stock" [ref=e216] [cursor=pointer]: Mark Dead Stock
+        - generic [ref=e218]:
+          - button "Order Management" [ref=e219] [cursor=pointer]:
+            - img [ref=e220]
+            - generic [ref=e222]: Order Management
+            - img [ref=e223]
+          - generic:
+            - button "Orders" [ref=e225] [cursor=pointer]: Orders
+            - button "Order Status Scanner" [ref=e227] [cursor=pointer]: Order Status Scanner
+            - button "Scan to Pack" [ref=e229] [cursor=pointer]: Scan to Pack
+            - button "Exchange" [ref=e231] [cursor=pointer]: Exchange
+            - button "Return" [ref=e233] [cursor=pointer]: Return
+            - button "Customer" [ref=e235] [cursor=pointer]: Customer
+        - generic [ref=e237]:
+          - button "School POS" [ref=e238] [cursor=pointer]:
+            - img [ref=e239]
+            - generic [ref=e241]: School POS
+            - img [ref=e242]
+          - generic:
+            - button "Stock Allotment" [ref=e244] [cursor=pointer]: Stock Allotment
+            - button "Returned Stock" [ref=e246] [cursor=pointer]: Returned Stock
+            - button "Pos Orders" [ref=e248] [cursor=pointer]: Pos Orders
+            - button "Pos Sale" [ref=e250] [cursor=pointer]: Pos Sale
+            - button "Pos Exchange" [ref=e252] [cursor=pointer]: Pos Exchange
+            - button "Pos Return" [ref=e254] [cursor=pointer]: Pos Return
+        - button "Classroom Delivery Scan" [ref=e257] [cursor=pointer]:
+          - img [ref=e258]
+          - generic [ref=e260]: Classroom Delivery Scan
+        - button "User Management" [active] [ref=e262] [cursor=pointer]:
+          - img [ref=e263]
+          - generic [ref=e265]: User Management
+        - generic [ref=e266]:
+          - button "Reports" [ref=e267] [cursor=pointer]:
+            - img [ref=e268]
+            - generic [ref=e270]: Reports
+            - img [ref=e271]
+          - generic:
+            - generic [ref=e273]:
+              - button "Stocks" [ref=e274] [cursor=pointer]:
+                - generic [ref=e276]: Stocks
+                - img [ref=e277]
+              - generic:
+                - button "Sub Store Stock Report" [ref=e279] [cursor=pointer]: Sub Store Stock Report
+                - button "Main Store Stock Report" [ref=e281] [cursor=pointer]: Main Store Stock Report
+                - button "Category Wise Report" [ref=e283] [cursor=pointer]: Category Wise Report
+                - button "Stock Allotment Report" [ref=e285] [cursor=pointer]: Stock Allotment Report
+            - generic [ref=e287]:
+              - button "Sales" [ref=e288] [cursor=pointer]:
+                - generic [ref=e290]: Sales
+                - img [ref=e291]
+              - generic:
+                - button "Sales Report" [ref=e293] [cursor=pointer]: Sales Report
+                - button "Account Report" [ref=e295] [cursor=pointer]: Account Report
+                - button "Sales By Customer" [ref=e297] [cursor=pointer]: Sales By Customer
+                - button "Sales By Product" [ref=e299] [cursor=pointer]: Sales By Product
+                - button "Sales By Student" [ref=e301] [cursor=pointer]: Sales By Student
+                - button "Online Payment Report" [ref=e303] [cursor=pointer]: Online Payment Report
+                - button "Status Wise Order Report" [ref=e305] [cursor=pointer]: Status Wise Order Report
+                - button "Classroom Delivery Report" [ref=e307] [cursor=pointer]: Classroom Delivery Report
+                - button "Exchange Report" [ref=e309] [cursor=pointer]: Exchange Report
+                - button "Return Report" [ref=e311] [cursor=pointer]: Return Report
+                - button "Collect Order Report" [ref=e313] [cursor=pointer]: Collect Order Report
+                - button "Cancel Order Report" [ref=e315] [cursor=pointer]: Cancel Order Report
+                - button "Coupon Report" [ref=e317] [cursor=pointer]: Coupon Report
+                - button "Kit Report" [ref=e319] [cursor=pointer]: Kit Report
+                - button "Retail Collection Report User Wise" [ref=e321] [cursor=pointer]: Retail Collection Report User Wise
+                - button "Retail Summary Collection Report User Wise" [ref=e323] [cursor=pointer]: Retail Summary Collection Report User Wise
+            - generic [ref=e325]:
+              - button "POS Reports" [ref=e326] [cursor=pointer]:
+                - generic [ref=e328]: POS Reports
+                - img [ref=e329]
+              - generic:
+                - button "Pos Sales Report" [ref=e331] [cursor=pointer]: Pos Sales Report
+                - button "Pos Sales by Customer" [ref=e333] [cursor=pointer]: Pos Sales by Customer
+                - button "Pos Sales by Product" [ref=e335] [cursor=pointer]: Pos Sales by Product
+                - button "Pos Sales by Student" [ref=e337] [cursor=pointer]: Pos Sales by Student
+                - button "Pos Exchange Report" [ref=e339] [cursor=pointer]: Pos Exchange Report
+                - button "Pos Return Report" [ref=e341] [cursor=pointer]: Pos Return Report
+                - button "Pos Collect Order Report" [ref=e343] [cursor=pointer]: Pos Collect Order Report
+                - button "Pos Cancel Order Report" [ref=e345] [cursor=pointer]: Pos Cancel Order Report
+                - button "Pos Kit Report" [ref=e347] [cursor=pointer]: Pos Kit Report
+                - button "Collection Report" [ref=e349] [cursor=pointer]: Collection Report
+                - button "Book Summary Report" [ref=e351] [cursor=pointer]: Book Summary Report
+                - button "Book Summary Detail Report" [ref=e353] [cursor=pointer]: Book Summary Detail Report
+                - button "Billed But Not Delivered Report Student Wise" [ref=e355] [cursor=pointer]: Billed But Not Delivered Report Student Wise
+                - button "Billed But Not Delivered Item Wise" [ref=e357] [cursor=pointer]: Billed But Not Delivered Item Wise
+                - button "Billed And Delivered Report Student Wise" [ref=e359] [cursor=pointer]: Billed And Delivered Report Student Wise
+                - button "Collection Report" [ref=e361] [cursor=pointer]: Collection Report
+                - button "Collection Report User Wise" [ref=e363] [cursor=pointer]: Collection Report User Wise
+                - button "Summary Collection Report User Wise" [ref=e365] [cursor=pointer]: Summary Collection Report User Wise
+        - generic [ref=e367]:
+          - button "Settings" [ref=e368] [cursor=pointer]:
+            - img [ref=e369]
+            - generic [ref=e371]: Settings
+            - img [ref=e372]
+          - generic:
+            - button "Order Settings" [ref=e374] [cursor=pointer]: Order Settings
+            - button "Discount Coupon" [ref=e376] [cursor=pointer]: Discount Coupon
+            - button "Email Settings" [ref=e378] [cursor=pointer]: Email Settings
+            - button "Delivery Partner" [ref=e380] [cursor=pointer]: Delivery Partner
+            - button "Supplier" [ref=e382] [cursor=pointer]: Supplier
+        - button "Customer Support" [ref=e385] [cursor=pointer]:
+          - img [ref=e386]
+          - generic [ref=e388]: Customer Support
+        - button "Retail Sale" [ref=e390] [cursor=pointer]:
+          - img [ref=e391]
+          - generic [ref=e393]: Retail Sale
+        - button "Retail Cash Counter" [ref=e395] [cursor=pointer]:
+          - img [ref=e396]
+          - generic [ref=e398]: Retail Cash Counter
+        - button "Retail Return" [ref=e400] [cursor=pointer]:
+          - img [ref=e401]
+          - generic [ref=e403]: Retail Return
+    - generic [ref=e404]:
+      - generic [ref=e406]:
+        - img [ref=e408] [cursor=pointer]
+        - button "Avatar Store Admin. ajay@store.com" [ref=e411] [cursor=pointer]:
+          - generic [ref=e412]:
+            - img "Avatar" [ref=e413]
+            - generic [ref=e414]:
+              - generic [ref=e415]: Store Admin.
+              - generic [ref=e417]: ajay@store.com
+            - img [ref=e418]
+      - main [ref=e420]:
+        - generic [ref=e543]:
+          - region "Notifications alt+T"
+          - generic [ref=e544]:
+            - generic [ref=e547]:
+              - heading "User Management" [level=1] [ref=e548]
+              - list [ref=e550]:
+                - listitem [ref=e551]:
+                  - button "Home" [ref=e552] [cursor=pointer]
+                - listitem [ref=e553]:
+                  - img [ref=e554]
+                - listitem [ref=e556]:
+                  - button "User Management" [ref=e557]
+            - generic [ref=e558]:
+              - generic [ref=e560]:
+                - img [ref=e561]
+                - textbox "Search by Name" [ref=e564]
+              - button "Add User" [ref=e566] [cursor=pointer]:
+                - img
+                - text: Add User
+              - button "Filter" [ref=e567] [cursor=pointer]:
+                - img
+                - generic [ref=e568]: Filter
+          - generic [ref=e569]:
+            - generic [ref=e571]:
+              - tablist "Tab segments" [ref=e572]:
+                - tab "Select USER" [selected] [ref=e573] [cursor=pointer]: USER
+                - tab "Select ROLE" [ref=e574] [cursor=pointer]: ROLE
+                - tab "Select INSTITUTION" [ref=e575] [cursor=pointer]: INSTITUTION
+              - generic:
+                - generic:
+                  - tabpanel
+            - table [ref=e578]:
+              - rowgroup [ref=e579]:
+                - row "SL. NO. Name Email User Role Institution Status Action" [ref=e580]:
+                  - columnheader "SL. NO." [ref=e581]:
+                    - generic [ref=e582]: SL. NO.
+                  - columnheader "Name" [ref=e583]:
+                    - generic [ref=e584]: Name
+                  - columnheader "Email" [ref=e585]:
+                    - generic [ref=e586]: Email
+                  - columnheader "User Role" [ref=e587]:
+                    - generic [ref=e588]: User Role
+                  - columnheader "Institution" [ref=e589]:
+                    - generic [ref=e590]: Institution
+                  - columnheader "Status" [ref=e591]:
+                    - generic [ref=e592]: Status
+                  - columnheader "Action" [ref=e593]:
+                    - generic [ref=e594]: Action
+              - rowgroup [ref=e595]:
+                - row "1 Abdul Abdul gafoor@nimsdxb.com cashier OH Nims Shj, Nims Dxb, Tcs, Aln Edit Change Password Delete" [ref=e596]:
+                  - cell "1" [ref=e597]:
+                    - generic [ref=e598]: "1"
+                  - cell "Abdul Abdul" [ref=e599]:
+                    - generic [ref=e601]:
+                      - img "Abdul" [ref=e602]
+                      - generic [ref=e603]: Abdul
+                  - cell "gafoor@nimsdxb.com" [ref=e604]:
+                    - generic [ref=e606]: gafoor@nimsdxb.com
+                  - cell "cashier OH" [ref=e607]:
+                    - generic [ref=e609]: cashier OH
+                  - cell "Nims Shj, Nims Dxb, Tcs, Aln" [ref=e610]:
+                    - generic [ref=e611]: Nims Shj, Nims Dxb, Tcs, Aln
+                  - cell [ref=e612]:
+                    - switch [checked] [ref=e616] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e617]:
+                    - generic [ref=e619]:
+                      - button "Edit" [ref=e621] [cursor=pointer]:
+                        - img [ref=e622]
+                      - button "Change Password" [ref=e628] [cursor=pointer]:
+                        - img [ref=e629]
+                      - button "Delete" [ref=e634] [cursor=pointer]:
+                        - img [ref=e635]
+                - row "2 Admin Central School Admin Central School admin@centeralschool.net Institution Admin Tcs Edit Change Password Delete" [ref=e639]:
+                  - cell "2" [ref=e640]:
+                    - generic [ref=e641]: "2"
+                  - cell "Admin Central School Admin Central School" [ref=e642]:
+                    - generic [ref=e644]:
+                      - img "Admin Central School" [ref=e645]
+                      - generic [ref=e646]: Admin Central School
+                  - cell "admin@centeralschool.net" [ref=e647]:
+                    - generic [ref=e649]: admin@centeralschool.net
+                  - cell "Institution Admin" [ref=e650]:
+                    - generic [ref=e652]: Institution Admin
+                  - cell "Tcs" [ref=e653]:
+                    - generic [ref=e654]: Tcs
+                  - cell [ref=e655]:
+                    - switch [checked] [ref=e659] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e660]:
+                    - generic [ref=e662]:
+                      - button "Edit" [ref=e664] [cursor=pointer]:
+                        - img [ref=e665]
+                      - button "Change Password" [ref=e671] [cursor=pointer]:
+                        - img [ref=e672]
+                      - button "Delete" [ref=e677] [cursor=pointer]:
+                        - img [ref=e678]
+                - row "3 Admin Sharjah Admin Sharjah admin@nimsshj.com Institution Admin Nims Shj Edit Change Password Delete" [ref=e682]:
+                  - cell "3" [ref=e683]:
+                    - generic [ref=e684]: "3"
+                  - cell "Admin Sharjah Admin Sharjah" [ref=e685]:
+                    - generic [ref=e687]:
+                      - img "Admin Sharjah" [ref=e688]
+                      - generic [ref=e689]: Admin Sharjah
+                  - cell "admin@nimsshj.com" [ref=e690]:
+                    - generic [ref=e692]: admin@nimsshj.com
+                  - cell "Institution Admin" [ref=e693]:
+                    - generic [ref=e695]: Institution Admin
+                  - cell "Nims Shj" [ref=e696]:
+                    - generic [ref=e697]: Nims Shj
+                  - cell [ref=e698]:
+                    - switch [checked] [ref=e702] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e703]:
+                    - generic [ref=e705]:
+                      - button "Edit" [ref=e707] [cursor=pointer]:
+                        - img [ref=e708]
+                      - button "Change Password" [ref=e714] [cursor=pointer]:
+                        - img [ref=e715]
+                      - button "Delete" [ref=e720] [cursor=pointer]:
+                        - img [ref=e721]
+                - row "4 Ahmed Ali Ahmed Ali ahmedali@nimsdxb.com cashier OH Nims Dxb Edit Change Password Delete" [ref=e725]:
+                  - cell "4" [ref=e726]:
+                    - generic [ref=e727]: "4"
+                  - cell "Ahmed Ali Ahmed Ali" [ref=e728]:
+                    - generic [ref=e730]:
+                      - img "Ahmed Ali" [ref=e731]
+                      - generic [ref=e732]: Ahmed Ali
+                  - cell "ahmedali@nimsdxb.com" [ref=e733]:
+                    - generic [ref=e735]: ahmedali@nimsdxb.com
+                  - cell "cashier OH" [ref=e736]:
+                    - generic [ref=e738]: cashier OH
+                  - cell "Nims Dxb" [ref=e739]:
+                    - generic [ref=e740]: Nims Dxb
+                  - cell [ref=e741]:
+                    - switch [checked] [ref=e745] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e746]:
+                    - generic [ref=e748]:
+                      - button "Edit" [ref=e750] [cursor=pointer]:
+                        - img [ref=e751]
+                      - button "Change Password" [ref=e757] [cursor=pointer]:
+                        - img [ref=e758]
+                      - button "Delete" [ref=e763] [cursor=pointer]:
+                        - img [ref=e764]
+                - row "5 arun Arun arunraj@docme.cloud Institution Admin Nims Dxb Edit Change Password Delete" [ref=e768]:
+                  - cell "5" [ref=e769]:
+                    - generic [ref=e770]: "5"
+                  - cell "arun Arun" [ref=e771]:
+                    - generic [ref=e773]:
+                      - img "arun" [ref=e774]
+                      - generic [ref=e775]: Arun
+                  - cell "arunraj@docme.cloud" [ref=e776]:
+                    - generic [ref=e778]: arunraj@docme.cloud
+                  - cell "Institution Admin" [ref=e779]:
+                    - generic [ref=e781]: Institution Admin
+                  - cell "Nims Dxb" [ref=e782]:
+                    - generic [ref=e783]: Nims Dxb
+                  - cell [ref=e784]:
+                    - switch [checked] [ref=e788] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e789]:
+                    - generic [ref=e791]:
+                      - button "Edit" [ref=e793] [cursor=pointer]:
+                        - img [ref=e794]
+                      - button "Change Password" [ref=e800] [cursor=pointer]:
+                        - img [ref=e801]
+                      - button "Delete" [ref=e806] [cursor=pointer]:
+                        - img [ref=e807]
+                - row "6 ARYA Arya sales5.dxb@nimsdxb.com Sales OH Nims Dxb Edit Change Password Delete" [ref=e811]:
+                  - cell "6" [ref=e812]:
+                    - generic [ref=e813]: "6"
+                  - cell "ARYA Arya" [ref=e814]:
+                    - generic [ref=e816]:
+                      - img "ARYA" [ref=e817]
+                      - generic [ref=e818]: Arya
+                  - cell "sales5.dxb@nimsdxb.com" [ref=e819]:
+                    - generic [ref=e821]: sales5.dxb@nimsdxb.com
+                  - cell "Sales OH" [ref=e822]:
+                    - generic [ref=e824]: Sales OH
+                  - cell "Nims Dxb" [ref=e825]:
+                    - generic [ref=e826]: Nims Dxb
+                  - cell [ref=e827]:
+                    - switch [checked] [ref=e831] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e832]:
+                    - generic [ref=e834]:
+                      - button "Edit" [ref=e836] [cursor=pointer]:
+                        - img [ref=e837]
+                      - button "Change Password" [ref=e843] [cursor=pointer]:
+                        - img [ref=e844]
+                      - button "Delete" [ref=e849] [cursor=pointer]:
+                        - img [ref=e850]
+                - row "7 Asif Shaj Asif Shaj accounts@technoalliance.ae Accounts Nims Shj, Nims Dxb, Tcs Edit Change Password Delete" [ref=e854]:
+                  - cell "7" [ref=e855]:
+                    - generic [ref=e856]: "7"
+                  - cell "Asif Shaj Asif Shaj" [ref=e857]:
+                    - generic [ref=e859]:
+                      - img "Asif Shaj" [ref=e860]
+                      - generic [ref=e861]: Asif Shaj
+                  - cell "accounts@technoalliance.ae" [ref=e862]:
+                    - generic [ref=e864]: accounts@technoalliance.ae
+                  - cell "Accounts" [ref=e865]:
+                    - generic [ref=e867]: Accounts
+                  - cell "Nims Shj, Nims Dxb, Tcs" [ref=e868]:
+                    - generic [ref=e869]: Nims Shj, Nims Dxb, Tcs
+                  - cell [ref=e870]:
+                    - switch [checked] [ref=e874] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e875]:
+                    - generic [ref=e877]:
+                      - button "Edit" [ref=e879] [cursor=pointer]:
+                        - img [ref=e880]
+                      - button "Change Password" [ref=e886] [cursor=pointer]:
+                        - img [ref=e887]
+                      - button "Delete" [ref=e892] [cursor=pointer]:
+                        - img [ref=e893]
+                - row "8 Ayshabi Noushad Ayshabi Noushad store1.tcs@zasa.ae School Store Incharge Tcs Edit Change Password Delete" [ref=e897]:
+                  - cell "8" [ref=e898]:
+                    - generic [ref=e899]: "8"
+                  - cell "Ayshabi Noushad Ayshabi Noushad" [ref=e900]:
+                    - generic [ref=e902]:
+                      - img "Ayshabi Noushad" [ref=e903]
+                      - generic [ref=e904]: Ayshabi Noushad
+                  - cell "store1.tcs@zasa.ae" [ref=e905]:
+                    - generic [ref=e907]: store1.tcs@zasa.ae
+                  - cell "School Store Incharge" [ref=e908]:
+                    - generic [ref=e910]: School Store Incharge
+                  - cell "Tcs" [ref=e911]:
+                    - generic [ref=e912]: Tcs
+                  - cell [ref=e913]:
+                    - switch [checked] [ref=e917] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e918]:
+                    - generic [ref=e920]:
+                      - button "Edit" [ref=e922] [cursor=pointer]:
+                        - img [ref=e923]
+                      - button "Change Password" [ref=e929] [cursor=pointer]:
+                        - img [ref=e930]
+                      - button "Delete" [ref=e935] [cursor=pointer]:
+                        - img [ref=e936]
+                - row "9 Barsuva Ibrahimkutty Barsuva Ibrahimkutty ms.supervisor@zasa.ae Main Store Supervisor Nims Shj, Nims Dxb, Tcs Edit Change Password Delete" [ref=e940]:
+                  - cell "9" [ref=e941]:
+                    - generic [ref=e942]: "9"
+                  - cell "Barsuva Ibrahimkutty Barsuva Ibrahimkutty" [ref=e943]:
+                    - generic [ref=e945]:
+                      - img "Barsuva Ibrahimkutty" [ref=e946]
+                      - generic [ref=e947]: Barsuva Ibrahimkutty
+                  - cell "ms.supervisor@zasa.ae" [ref=e948]:
+                    - generic [ref=e950]: ms.supervisor@zasa.ae
+                  - cell "Main Store Supervisor" [ref=e951]:
+                    - generic [ref=e953]: Main Store Supervisor
+                  - cell "Nims Shj, Nims Dxb, Tcs" [ref=e954]:
+                    - generic [ref=e955]: Nims Shj, Nims Dxb, Tcs
+                  - cell [ref=e956]:
+                    - switch [checked] [ref=e960] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e961]:
+                    - generic [ref=e963]:
+                      - button "Edit" [ref=e965] [cursor=pointer]:
+                        - img [ref=e966]
+                      - button "Change Password" [ref=e972] [cursor=pointer]:
+                        - img [ref=e973]
+                      - button "Delete" [ref=e978] [cursor=pointer]:
+                        - img [ref=e979]
+                - row "10 baseem Baseem accounts@nimsshj.com cashier OH Nims Shj Edit Change Password Delete" [ref=e983]:
+                  - cell "10" [ref=e984]:
+                    - generic [ref=e985]: "10"
+                  - cell "baseem Baseem" [ref=e986]:
+                    - generic [ref=e988]:
+                      - img "baseem" [ref=e989]
+                      - generic [ref=e990]: Baseem
+                  - cell "accounts@nimsshj.com" [ref=e991]:
+                    - generic [ref=e993]: accounts@nimsshj.com
+                  - cell "cashier OH" [ref=e994]:
+                    - generic [ref=e996]: cashier OH
+                  - cell "Nims Shj" [ref=e997]:
+                    - generic [ref=e998]: Nims Shj
+                  - cell [ref=e999]:
+                    - switch [checked] [ref=e1003] [cursor=pointer]
+                  - cell "Edit Change Password Delete" [ref=e1004]:
+                    - generic [ref=e1006]:
+                      - button "Edit" [ref=e1008] [cursor=pointer]:
+                        - img [ref=e1009]
+                      - button "Change Password" [ref=e1015] [cursor=pointer]:
+                        - img [ref=e1016]
+                      - button "Delete" [ref=e1021] [cursor=pointer]:
+                        - img [ref=e1022]
+            - generic [ref=e1026]:
+              - generic [ref=e1027]:
+                - generic [ref=e1028]: "Items per page:"
+                - button "10" [ref=e1029]:
+                  - text: "10"
+                  - img [ref=e1030]
+              - generic [ref=e1033]:
+                - navigation "pagination" [ref=e1034]:
+                  - list [ref=e1035]:
+                    - listitem [ref=e1036]:
+                      - generic "Go to previous page" [ref=e1037]:
+                        - img
+                        - generic [ref=e1038]: Previous
+                    - listitem [ref=e1039]:
+                      - generic [ref=e1040] [cursor=pointer]: "1"
+                    - listitem [ref=e1041]:
+                      - generic [ref=e1042] [cursor=pointer]: "2"
+                    - listitem [ref=e1043]:
+                      - generic [ref=e1044] [cursor=pointer]: "3"
+                    - listitem [ref=e1045]:
+                      - generic [ref=e1046] [cursor=pointer]: "4"
+                    - listitem [ref=e1047]:
+                      - generic [ref=e1048]: ...
+                    - listitem [ref=e1049]:
+                      - generic [ref=e1050] [cursor=pointer]: "9"
+                    - listitem [ref=e1051]:
+                      - generic "Go to next page" [ref=e1052] [cursor=pointer]:
+                        - generic [ref=e1053]: Next
+                        - img
+                - generic [ref=e1054]: Showing 1-10 of 84 items
+            - region "Notifications alt+T"

@@ -1,0 +1,245 @@
+- generic [ref=e2]:
+  - region "Notifications alt+T":
+    - list:
+      - listitem [ref=e135]:
+        - img [ref=e137]
+        - generic [ref=e140]: Successfully logged In
+  - generic [ref=e141]:
+    - generic [ref=e147]:
+      - link "Saza Logo" [ref=e149] [cursor=pointer]:
+        - /url: /
+        - img "Saza Logo" [ref=e150]
+      - navigation [ref=e152]:
+        - generic [ref=e153]:
+          - button "Dashboards" [ref=e154] [cursor=pointer]:
+            - img [ref=e155]
+            - generic [ref=e157]: Dashboards
+            - img [ref=e158]
+          - generic:
+            - button "Management Dashboard" [ref=e160] [cursor=pointer]: Management Dashboard
+            - button "Manager Dashboard" [ref=e162] [cursor=pointer]: Manager Dashboard
+            - button "Main Store Dashboard" [ref=e164] [cursor=pointer]: Main Store Dashboard
+            - button "School Store Dashboard" [ref=e166] [cursor=pointer]: School Store Dashboard
+            - button "Customer Support Dashboard" [ref=e168] [cursor=pointer]: Customer Support Dashboard
+        - generic [ref=e170]:
+          - button "Product Management" [ref=e171] [cursor=pointer]:
+            - img [ref=e172]
+            - generic [ref=e174]: Product Management
+            - img [ref=e175]
+          - generic:
+            - button "Product" [ref=e177] [cursor=pointer]: Product
+            - button "Product Kit" [ref=e179] [cursor=pointer]: Product Kit
+            - button "Product Settings" [ref=e181] [cursor=pointer]: Product Settings
+            - button "Weight Management" [ref=e183] [cursor=pointer]: Weight Management
+            - button "Product Barcode Management" [ref=e185] [cursor=pointer]: Product Barcode Management
+            - button "Product Barcode Printing" [ref=e187] [cursor=pointer]: Product Barcode Printing
+            - button "Rate Management" [ref=e189] [cursor=pointer]: Rate Management
+        - generic [ref=e191]:
+          - button "Quotation & Purchase" [ref=e192] [cursor=pointer]:
+            - img [ref=e193]
+            - generic [ref=e195]: Quotation & Purchase
+            - img [ref=e196]
+          - generic:
+            - button "Quotation Management" [ref=e198] [cursor=pointer]: Quotation Management
+            - button "Purchase Management" [ref=e200] [cursor=pointer]: Purchase Management
+            - button "Purchase Return" [ref=e202] [cursor=pointer]: Purchase Return
+        - generic [ref=e204]:
+          - button "Stock Management" [ref=e205] [cursor=pointer]:
+            - img [ref=e206]
+            - generic [ref=e211]: Stock Management
+            - img [ref=e212]
+          - generic:
+            - button "Stocks" [ref=e214] [cursor=pointer]: Stocks
+            - button "Mark Dead Stock" [ref=e216] [cursor=pointer]: Mark Dead Stock
+        - generic [ref=e218]:
+          - button "Order Management" [ref=e219] [cursor=pointer]:
+            - img [ref=e220]
+            - generic [ref=e222]: Order Management
+            - img [ref=e223]
+          - generic:
+            - button "Orders" [ref=e225] [cursor=pointer]: Orders
+            - button "Order Status Scanner" [ref=e227] [cursor=pointer]: Order Status Scanner
+            - button "Scan to Pack" [ref=e229] [cursor=pointer]: Scan to Pack
+            - button "Exchange" [ref=e231] [cursor=pointer]: Exchange
+            - button "Return" [ref=e233] [cursor=pointer]: Return
+            - button "Customer" [ref=e235] [cursor=pointer]: Customer
+        - generic [ref=e237]:
+          - button "School POS" [ref=e238] [cursor=pointer]:
+            - img [ref=e239]
+            - generic [ref=e241]: School POS
+            - img [ref=e242]
+          - generic:
+            - button "Stock Allotment" [ref=e244] [cursor=pointer]: Stock Allotment
+            - button "Returned Stock" [ref=e246] [cursor=pointer]: Returned Stock
+            - button "Pos Orders" [ref=e248] [cursor=pointer]: Pos Orders
+            - button "Pos Sale" [ref=e250] [cursor=pointer]: Pos Sale
+            - button "Pos Exchange" [ref=e252] [cursor=pointer]: Pos Exchange
+            - button "Pos Return" [ref=e254] [cursor=pointer]: Pos Return
+        - button "Classroom Delivery Scan" [ref=e257] [cursor=pointer]:
+          - img [ref=e258]
+          - generic [ref=e260]: Classroom Delivery Scan
+        - button "User Management" [ref=e262] [cursor=pointer]:
+          - img [ref=e263]
+          - generic [ref=e265]: User Management
+        - generic [ref=e266]:
+          - button "Reports" [ref=e267] [cursor=pointer]:
+            - img [ref=e268]
+            - generic [ref=e270]: Reports
+            - img [ref=e271]
+          - generic:
+            - generic [ref=e273]:
+              - button "Stocks" [ref=e274] [cursor=pointer]:
+                - generic [ref=e276]: Stocks
+                - img [ref=e277]
+              - generic:
+                - button "Sub Store Stock Report" [ref=e279] [cursor=pointer]: Sub Store Stock Report
+                - button "Main Store Stock Report" [ref=e281] [cursor=pointer]: Main Store Stock Report
+                - button "Category Wise Report" [ref=e283] [cursor=pointer]: Category Wise Report
+                - button "Stock Allotment Report" [ref=e285] [cursor=pointer]: Stock Allotment Report
+            - generic [ref=e287]:
+              - button "Sales" [ref=e288] [cursor=pointer]:
+                - generic [ref=e290]: Sales
+                - img [ref=e291]
+              - generic:
+                - button "Sales Report" [ref=e293] [cursor=pointer]: Sales Report
+                - button "Account Report" [ref=e295] [cursor=pointer]: Account Report
+                - button "Sales By Customer" [ref=e297] [cursor=pointer]: Sales By Customer
+                - button "Sales By Product" [ref=e299] [cursor=pointer]: Sales By Product
+                - button "Sales By Student" [ref=e301] [cursor=pointer]: Sales By Student
+                - button "Online Payment Report" [ref=e303] [cursor=pointer]: Online Payment Report
+                - button "Status Wise Order Report" [ref=e305] [cursor=pointer]: Status Wise Order Report
+                - button "Classroom Delivery Report" [ref=e307] [cursor=pointer]: Classroom Delivery Report
+                - button "Exchange Report" [ref=e309] [cursor=pointer]: Exchange Report
+                - button "Return Report" [ref=e311] [cursor=pointer]: Return Report
+                - button "Collect Order Report" [ref=e313] [cursor=pointer]: Collect Order Report
+                - button "Cancel Order Report" [ref=e315] [cursor=pointer]: Cancel Order Report
+                - button "Coupon Report" [ref=e317] [cursor=pointer]: Coupon Report
+                - button "Kit Report" [ref=e319] [cursor=pointer]: Kit Report
+                - button "Retail Collection Report User Wise" [ref=e321] [cursor=pointer]: Retail Collection Report User Wise
+                - button "Retail Summary Collection Report User Wise" [ref=e323] [cursor=pointer]: Retail Summary Collection Report User Wise
+            - generic [ref=e325]:
+              - button "POS Reports" [ref=e326] [cursor=pointer]:
+                - generic [ref=e328]: POS Reports
+                - img [ref=e329]
+              - generic:
+                - button "Pos Sales Report" [ref=e331] [cursor=pointer]: Pos Sales Report
+                - button "Pos Sales by Customer" [ref=e333] [cursor=pointer]: Pos Sales by Customer
+                - button "Pos Sales by Product" [ref=e335] [cursor=pointer]: Pos Sales by Product
+                - button "Pos Sales by Student" [ref=e337] [cursor=pointer]: Pos Sales by Student
+                - button "Pos Exchange Report" [ref=e339] [cursor=pointer]: Pos Exchange Report
+                - button "Pos Return Report" [ref=e341] [cursor=pointer]: Pos Return Report
+                - button "Pos Collect Order Report" [ref=e343] [cursor=pointer]: Pos Collect Order Report
+                - button "Pos Cancel Order Report" [ref=e345] [cursor=pointer]: Pos Cancel Order Report
+                - button "Pos Kit Report" [ref=e347] [cursor=pointer]: Pos Kit Report
+                - button "Collection Report" [ref=e349] [cursor=pointer]: Collection Report
+                - button "Book Summary Report" [ref=e351] [cursor=pointer]: Book Summary Report
+                - button "Book Summary Detail Report" [ref=e353] [cursor=pointer]: Book Summary Detail Report
+                - button "Billed But Not Delivered Report Student Wise" [ref=e355] [cursor=pointer]: Billed But Not Delivered Report Student Wise
+                - button "Billed But Not Delivered Item Wise" [ref=e357] [cursor=pointer]: Billed But Not Delivered Item Wise
+                - button "Billed And Delivered Report Student Wise" [ref=e359] [cursor=pointer]: Billed And Delivered Report Student Wise
+                - button "Collection Report" [ref=e361] [cursor=pointer]: Collection Report
+                - button "Collection Report User Wise" [ref=e363] [cursor=pointer]: Collection Report User Wise
+                - button "Summary Collection Report User Wise" [ref=e365] [cursor=pointer]: Summary Collection Report User Wise
+        - generic [ref=e367]:
+          - button "Settings" [ref=e368] [cursor=pointer]:
+            - img [ref=e369]
+            - generic [ref=e371]: Settings
+            - img [ref=e372]
+          - generic:
+            - button "Order Settings" [ref=e374] [cursor=pointer]: Order Settings
+            - button "Discount Coupon" [ref=e376] [cursor=pointer]: Discount Coupon
+            - button "Email Settings" [ref=e378] [cursor=pointer]: Email Settings
+            - button "Delivery Partner" [ref=e380] [cursor=pointer]: Delivery Partner
+            - button "Supplier" [ref=e382] [cursor=pointer]: Supplier
+        - button "Customer Support" [ref=e385] [cursor=pointer]:
+          - img [ref=e386]
+          - generic [ref=e388]: Customer Support
+        - button "Retail Sale" [ref=e390] [cursor=pointer]:
+          - img [ref=e391]
+          - generic [ref=e393]: Retail Sale
+        - button "Retail Cash Counter" [ref=e395] [cursor=pointer]:
+          - img [ref=e396]
+          - generic [ref=e398]: Retail Cash Counter
+        - button "Retail Return" [ref=e400] [cursor=pointer]:
+          - img [ref=e401]
+          - generic [ref=e403]: Retail Return
+    - generic [ref=e404]:
+      - generic [ref=e406]:
+        - img [ref=e408] [cursor=pointer]
+        - button "Avatar Store Admin. ajay@store.com" [ref=e411] [cursor=pointer]:
+          - generic [ref=e412]:
+            - img "Avatar" [ref=e413]
+            - generic [ref=e414]:
+              - generic [ref=e415]: Store Admin.
+              - generic [ref=e417]: ajay@store.com
+            - img [ref=e418]
+      - main [ref=e420]:
+        - generic [ref=e428]:
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - heading "Good Afternoon! 👋" [level=2] [ref=e431]
+              - heading "Welcome to Zasa Online Store Admin" [level=3] [ref=e432]
+              - paragraph [ref=e433]: Manage your online store with ease. Track orders, monitor inventory, handle products, and streamline your store operations from this comprehensive admin dashboard.
+            - generic [ref=e434]:
+              - generic [ref=e435]:
+                - img [ref=e437]
+                - generic [ref=e439]:
+                  - paragraph [ref=e440]: Uniforms
+                  - paragraph [ref=e441]: Manage Inventory
+              - generic [ref=e442]:
+                - img [ref=e444]
+                - generic [ref=e446]:
+                  - paragraph [ref=e447]: Books
+                  - paragraph [ref=e448]: Track Stock
+              - generic [ref=e449]:
+                - img [ref=e451]
+                - generic [ref=e454]:
+                  - paragraph [ref=e455]: Orders
+                  - paragraph [ref=e456]: Process Fast
+              - generic [ref=e457]:
+                - img [ref=e459]
+                - generic [ref=e462]:
+                  - paragraph [ref=e463]: Analytics
+                  - paragraph [ref=e464]: View Reports
+            - generic [ref=e465]:
+              - heading "Store Workflow" [level=3] [ref=e466]
+              - generic [ref=e468]:
+                - generic [ref=e470]:
+                  - img [ref=e473]
+                  - generic [ref=e478]:
+                    - paragraph [ref=e479]: Order Received
+                    - paragraph [ref=e480]: Customer places order
+                - generic [ref=e481]:
+                  - img [ref=e484]
+                  - generic [ref=e488]:
+                    - paragraph [ref=e489]: Processing
+                    - paragraph [ref=e490]: Processing items
+                - generic [ref=e491]:
+                  - img [ref=e494]
+                  - generic [ref=e499]:
+                    - paragraph [ref=e500]: Shipping
+                    - paragraph [ref=e501]: Out for delivery
+                - generic [ref=e502]:
+                  - img [ref=e505]
+                  - generic [ref=e508]:
+                    - paragraph [ref=e509]: Completed
+                    - paragraph [ref=e510]: Order delivered
+          - generic [ref=e513]:
+            - generic [ref=e514]:
+              - img "Zasa Store 1" [ref=e516]
+              - img "Zasa Store 2" [ref=e518]
+              - img "Zasa Store 3" [ref=e520]
+              - img "Zasa Store 4" [ref=e522]
+              - img "Zasa Store 5" [ref=e524]
+              - img "Zasa Store 6" [ref=e526]
+              - img "Zasa Store 7" [ref=e528]
+              - img "Zasa Store 8" [ref=e530]
+            - generic [ref=e531]:
+              - button "Go to image 1" [ref=e532]
+              - button "Go to image 2" [ref=e533]
+              - button "Go to image 3" [ref=e534]
+              - button "Go to image 4" [ref=e535]
+              - button "Go to image 5" [ref=e536]
+              - button "Go to image 6" [ref=e537]
+              - button "Go to image 7" [ref=e538]
+              - button "Go to image 8" [ref=e539]
