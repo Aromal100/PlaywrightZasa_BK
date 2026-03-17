@@ -7,7 +7,8 @@ export class ProductSettingsPage {
         this.colorCode = page.getByRole('textbox', { name: 'Color Code' });
         this.category = page.getByRole('combobox', { name: 'Category' });
         this.saveButton = page.getByRole('button', { name: 'Save' });
-        this.successMessage = page.locator('text=Color added successfully').first(); // assuming the message
+        this.successMessage = page.locator('text=Color added successfully').first();
+        
     }
 
     async addColor(colorName, colorCode) {

@@ -9,6 +9,7 @@ constructor(page)
     this.product=page.locator("//button[text()='Product']");
     this.productKit=page.locator("//button[text()='Product Kit']");
     this.productSettings=page.locator("//button[text()='Product Settings']");
+    this.weightManagement=page.locator("//button[text()='Weight Management']");
 
 }
 
@@ -28,6 +29,12 @@ async openProductSettingsPage()
 {
     await this.productManagement.click();
     await this.productSettings.click();
+}
+
+async openWeightManagementPage()
+{
+     await this.productManagement.click();
+     await this.weightManagement.click();
 }
 
 }
