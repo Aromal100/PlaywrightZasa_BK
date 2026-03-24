@@ -10,6 +10,12 @@ constructor(page)
     this.productKit=page.locator("//button[text()='Product Kit']");
     this.productSettings=page.locator("//button[text()='Product Settings']");
     this.weightManagement=page.locator("//button[text()='Weight Management']");
+    this.quotation=page.locator("//span[text()='Quotation & Purchase']/parent::button");
+    this.quotationManagement=page.locator("//button[text()='Quotation Management']");
+    this.purchaseManagement=page.locator("//button[text()='Purchase Management']");
+    this.quotationManagement=page.locator("//button[text()='Quotation Management']");
+
+
 
 }
 
@@ -37,4 +43,30 @@ async openWeightManagementPage()
      await this.weightManagement.click();
 }
 
+async openQuotationManagementPage()
+{
+    await this.quotation.click();
+    await this.quotationManagement.click();
+
 }
+
+async openPurchaseManagementPage()
+{
+    await this.quotation.click();
+    await this.purchaseManagement.click();
+
+}
+
+async openQuotationManagementPage()
+{
+    await this.quotation.click();
+    await this.quotationManagement.click();
+
+}
+
+
+
+
+
+}
+
