@@ -10,16 +10,14 @@ import datas from '../../config/testData.json';
     }
 
     async landing() {
-        await this.page.goto(datas.url);
-        
-        
+        await this.page.goto(datas.url);   
     }
 
     async adminlogin(username, password) {
         await this.email.fill(username);
         await this.pass.fill(password);
         await this.remember.click();
-         await this.signIn.click();
+        await this.signIn.click();
         
 
     }

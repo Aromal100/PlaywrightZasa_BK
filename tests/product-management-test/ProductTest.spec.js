@@ -3,6 +3,7 @@ import { ProductPage } from '../../pages/product-management-pages/ProductPage.js
 import { AdminLoginPage } from '../../pages/login-pages/AdminLoginPage.js';
 import { SidePages } from '../../pages/common-pages/SidePages.js';
 import datas from '../../config/testData.json';
+import { faker } from '@faker-js/faker';
 
 
 test.describe.serial('Product flow', () => {
@@ -18,7 +19,8 @@ test.describe.serial('Product flow', () => {
     const pp = new ProductPage(page);
     const sp = new SidePages(page);
     await sp.openProductPage();
-    await pp.addUniformProduct(datas.productname, datas.age);
+    const productname = faker.commerce.productName();
+    await pp.addUniformProduct(productname, datas.age);
     await expect(pp.productMessage).toHaveText('Product added successfully.');
 
   })
@@ -28,9 +30,11 @@ test.describe.serial('Product flow', () => {
     const sp = new SidePages(page);
     await sp.openProductPage();
     const pp = new ProductPage(page);
-    await pp.addUniformProduct(datas.productname2, datas.age);
-    await pp.searchProduct(datas.productname2);
-    await pp.editProduct(datas.edit);
+    const productname = faker.commerce.productName();
+    const productname1 = faker.commerce.productName();
+    await pp.addUniformProduct(productname, datas.age);
+    await pp.searchProduct(productname);
+    await pp.editProduct(productname1);
     await expect(pp.editProductMessage).toHaveText('Product updated successfully.');
 
   })
@@ -40,8 +44,9 @@ test.describe.serial('Product flow', () => {
     const sp = new SidePages(page);
     await sp.openProductPage();
     const pp = new ProductPage(page);
-    await pp.addUniformProduct(datas.productname3, datas.age);
-    await pp.searchProduct(datas.edit);
+    const productname = faker.commerce.productName();
+    await pp.addUniformProduct(productname, datas.age);
+    await pp.searchProduct(productname);
     await pp.productDelete();
     await expect(pp.deleteProductMessage).toHaveText('Product deleted successfully.');
 

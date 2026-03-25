@@ -14,6 +14,10 @@ constructor(page)
     this.quotationManagement=page.locator("//button[text()='Quotation Management']");
     this.purchaseManagement=page.locator("//button[text()='Purchase Management']");
     this.quotationManagement=page.locator("//button[text()='Quotation Management']");
+    this.purchaseReturn=page.locator("//button[text()='Purchase Return']");
+    this.orderManagement=page.locator("//span[text()='Order Management']/parent::button");
+    this.orders=page.locator("//button[text()='Orders']");
+
 
 
 
@@ -62,6 +66,19 @@ async openQuotationManagementPage()
     await this.quotation.click();
     await this.quotationManagement.click();
 
+}
+
+async openPurchaseReturnPage()
+{
+    await this.quotation.click();
+    await this.purchaseReturn.click();
+
+}
+
+async openOrdersPage()
+{
+    await this.orderManagement.click();
+    await this.orders.click();
 }
 
 

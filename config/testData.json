@@ -1,11 +1,10 @@
 {
     "url": "https://store-qa.globtech.in/",
+    "onlineStoreUrl":"https://store-dev.globtech.in/",
     "username": "ajay@store.com",
     "password": "123456",
-    "productname":"boat speaker c1",
+    "email":"arshadazadad@yahoo.com",
     "age":"25",
-    "productname2":"boat speaker c2",
-    "productname3":"boat speaker c3",
     "edit":"bass",
     "kitname":"My kit",
     "description":"Testing",

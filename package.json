@@ -2,11 +2,8 @@
   "name": "zasabackend",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts":{
-
-    "product":"npx playwright test ProductTest.spec.js"
-
-
+  "scripts": {
+    "product": "npx playwright test ProductTest.spec.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +13,8 @@
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.3.5",
     "allure-playwright": "^3.6.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.4.0"
   }
 }
