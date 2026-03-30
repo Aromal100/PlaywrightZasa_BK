@@ -9,13 +9,13 @@ test('Checking the order function',async({page,request})=>{
    
     const or= new Orders(page);
 
-    //  Frontend
+    // Frontend
     await or.landingOnlineStore(datas.email,datas.password);
     const orderId=await or.orderAnItem();
     console.log('Frontend Order ID:', orderId);
 
   
-    //backend
+    // backend
     const bk = new AdminLoginPage(page);
     await bk.landing();
     await bk.adminlogin(datas.username, datas.password);
@@ -30,7 +30,15 @@ test('Checking the order function',async({page,request})=>{
     await or.orderStatusScanner();
     await sp.openScanToPackPage();
     await or.scanToPack();
-    await page.pause();
+    await sp.openOrdersPage();
+    await or.barcodeScan();
+    await or.orderStatusScanner();
+    await or.waitForDelivery();
+    await expect (or.statusText).toHaveText("Order status updated to Delivered in Class room.");
+    
+
+
+    
 
 
 

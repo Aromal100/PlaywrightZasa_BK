@@ -29,8 +29,7 @@ export class Orders {
         this.orderBarcode=page.locator("[aria-label='Copy Barcode']").first();
         this.barcode=page.locator("//button[contains(@class,'bg-slate-50')]");
         this.scanProductBarcode=page.getByPlaceholder("Scan or enter product barcode");
-
-
+        this.statusText=page.locator('text=Order status updated to Delivered in Class room.');
 
     }
 
@@ -87,6 +86,23 @@ export class Orders {
 
 
     }
+
+
+    async waitForDelivery() {
+
+        while(true)
+        {
+        await this.orderStatusScanner();
+
+        await this.page.waitForTimeout(1000);
+
+         if (await this.statusText.isVisible()) {
+                break;
+            }
+
+        }
+    }
+
 
 
 
