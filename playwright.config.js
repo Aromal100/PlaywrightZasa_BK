@@ -31,6 +31,12 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    baseURL:'https://restful-booker.herokuapp.com/booking',
+    extraHTTPHeaders:{
+      Accept:"application/json",
+      "Content-Type":"application/json" 
+    
+    },
     trace: 'on-first-retry',
     actionTimeout: 10000,       // Timeout for actions like click(), fill()
     navigationTimeout: 8000,
