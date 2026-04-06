@@ -19,6 +19,7 @@ constructor(page)
     this.orders=page.locator("//button[text()='Orders']");
     this.orderStatusScanner=page.locator("//button[text()='Order Status Scanner']");
     this.scantoPack=page.locator("//button[text()='Scan to Pack']");
+    this.exchangePage=page.locator("//button[text()='Exchange']");
     
 
 
@@ -85,17 +86,32 @@ async openOrdersPage()
     await this.orders.click();
 }
 
+async openOrders()
+{
+    await this.orders.click();
+}
 
 async openOrderStatusScannerPage()
 {
-    await this.orderManagement.click();
+    //await this.orderManagement.click();
     await this.orderStatusScanner.click();
 }
 
 async openScanToPackPage()
 {
-    await this.orderManagement.click();
+    //await this.orderManagement.click();
     await this.scantoPack.click();
+}
+
+async openExchangePage()
+{
+    await this.orderManagement.click();
+    await this.exchangePage.click();
+}
+
+async openExchange()
+{
+    await this.exchangePage.click();
 }
 
 

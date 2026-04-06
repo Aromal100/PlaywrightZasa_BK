@@ -56,6 +56,7 @@ test.only('Api post on BM store', async ({ request }) => {
 
        const loginBody=await loginRes.json();
        const token=loginBody.response.token;
+       console.log(token);
        
 
 
