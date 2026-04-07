@@ -45,7 +45,7 @@ test('Api test with post method', async ({ page, request }) => {
 
 })
 
-test.only('Api post on BM store', async ({ request }) => {
+test('Api post on BM store', async ({ request }) => {
 
 
        const loginRes=await request.post("https://storeapi-qa.globtech.in/api_fe/signin",{
@@ -61,7 +61,7 @@ test.only('Api post on BM store', async ({ request }) => {
 
 
 
-        const newReq =await request.post("https://storeapi-qa.globtech.in/api_fe/save_product_in_cart",{
+        const newReq =await request.post("  ",{
             headers:{
                 Authorization: `Bearer ${token}`
             },
@@ -75,6 +75,40 @@ test.only('Api post on BM store', async ({ request }) => {
         const res=await newReq.json();
         console.log(res);
       
+
+
+    })
+
+
+    test('update the api test',async({request})=>{
+
+       const putReq=await request.put("https://restful-booker.herokuapp.com/booking/1",{ 
+        
+        headers: {
+        'Authorization': 'Basic YWRtaW46cGFzc3dvcmQxMjM='
+      },
+
+        data:{
+
+            "firstname": "Jimmy",
+            "lastname": "Brown",
+            "totalprice": 111,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2018-01-01",
+                "checkout": "2019-01-01"
+            },
+            "additionalneeds": "Breakfasts"
+        }
+
+
+       });
+
+       const jsonRes = await putReq.json();
+       console.log(jsonRes);
+
+
+
 
 
     })
