@@ -24,5 +24,12 @@
         "checkout" : "2019-01-01"
     },
     "additionalneeds" : "Breakfast"
+   },
+
+  "loginData":
+  {
+    "email":"ajay@store.com",
+    "password":"123456"
    }
+  
 }

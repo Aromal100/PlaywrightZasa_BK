@@ -15,6 +15,10 @@
         "playwright",
         "run-test-mcp-server"
       ]
+    },
+    "playwright-api": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"]
     }
   },
   "inputs": []
