@@ -30,6 +30,14 @@
   {
     "email":"ajay@store.com",
     "password":"123456"
+   },
+
+   "loginDatas":
+  {
+    "email":"haroonaluvay@yahoo.com",
+    "password":"123456"
    }
+
+
   
 }

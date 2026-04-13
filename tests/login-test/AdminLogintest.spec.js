@@ -8,6 +8,5 @@ test('Admin Login function test',async ({page})=>{
     await adminLoginPage.landing();
     await adminLoginPage.adminlogin(datas.username,datas.password);
     
-    
 
 });
